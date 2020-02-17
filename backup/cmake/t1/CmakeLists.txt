@@ -1,0 +1,6 @@
+﻿PROJECT (T1)
+
+//设置编译路径
+SET(SRC_LIST ${CMAKE_CURRENT_LIST_DIR}/main.cpp)
+ADD_EXECUTABLE(Hello ${SRC_LIST})
+

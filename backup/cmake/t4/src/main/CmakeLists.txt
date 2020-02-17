@@ -1,0 +1,13 @@
+﻿SET(SRC ${CMAKE_CURRENT_LIST_DIR}/main.cpp)
+
+ADD_EXECUTABLE(Hell ${SRC})
+
+INCLUDE_DIRECTORIES(${PROJECT_SOURCE_DIR}/thirdpart/include)#鍖呭惈澶存枃浠惰矾寰?
+
+target_link_directories(Hell PUBLIC 
+    ${PROJECT_SOURCE_DIR}/thirdpart/lib
+)#閾炬帴搴撴枃浠惰矾寰?
+
+TARGET_LINK_LIBRARIES(Hell PUBLIC
+    HellOLib 
+ )#閾炬帴搴撴枃浠跺悕
